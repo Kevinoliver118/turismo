@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #D4C08E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 10; /* Asegura que el navbar esté encima de otros elementos */
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: #D4C08E;
+}
+
+.nav-item a:active {
+  color: white; /* El color permanecerá blanco incluso cuando se haga clic */
+}
+
+.nav-item a:visited {
+  color: white; /* También puedes evitar que el color cambie después de que se haya visitado */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px;
+  list-style-type: none;
+  z-index: 10; /* Asegura que el menú desplegable esté encima de la imagen */
+}
+
+.dropdown li a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: #D4C08E;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-btn {
+  background-color: #D4C08E;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.currency-switcher select {
+  padding: 5px;
+  font-size: 16px;
+}/*# sourceMappingURL=navbar.css.map */
