@@ -2,6 +2,12 @@
     <div class="logo">
         <a href="{{route('welcome')}}">Amazonia</a>
     </div>
+        <!-- Icono de menú hamburguesa para pantallas móviles -->
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Icono de cerrar menú (X) -->
+    <button class="close-btn" onclick="toggleMenu()">&#10005;</button>
+
     <ul class="nav-links">
         <li class="nav-item">
             <a href="{{route('paquetes')}}">Paquetes</a>
