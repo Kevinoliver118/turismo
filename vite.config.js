@@ -5,10 +5,11 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/predeterminados/navbar.css',
-                'resources/css/welcome/diseños.css',
+                'resources/css/app.css',
+                'resources/js/app.js',
             ],
             refresh: true,
         }),
     ],
 });
+
