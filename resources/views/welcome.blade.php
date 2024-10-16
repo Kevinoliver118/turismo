@@ -7,6 +7,8 @@
   @vite('resources/css/predeterminados/navbar.css')
   @vite('resources/css/welcome/diseños.css')
   @vite('resources/css/predeterminados/pie-pagina.css')
+  @vite('resources/css/predeterminados/tarjetas.css')
+  @vite('resources/css/welcome/intro-section.css')
 </head>
 <body>
 @include('components.componentes.navbar')

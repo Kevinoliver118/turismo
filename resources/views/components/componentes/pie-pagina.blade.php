@@ -16,6 +16,15 @@
                 <li><a href="#">Descubre Arequipa</a></li>
             </div>
             <div class="box">
+            <h2>PAQUETES</h2>
+            <ul>
+                <li><a href="#">Colca Canyon</a></li>
+                <li><a href="#">Lago Titicaca</a></li>
+                <li><a href="#">Selva Central</a></li>
+                <li><a href="#">Cusco Histórico</a></li>
+            </ul>
+        </div>
+            <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
                     <a href="#" >

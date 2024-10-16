@@ -1,83 +1,81 @@
+@charset "UTF-8";
 .pie-pagina {
-  width: 100%;
-  background-color: black;
+  background-color: #333;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 40px 0;
 }
 
 .pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.pie-pagina .grupo-1 .box figure img {
-  width: 250px;
+.pie-pagina .box {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
 }
 
-.pie-pagina .grupo-1 .box h2 {
-  margin-bottom: 25px;
-  font-size: 20px;
-  color: white;
+.pie-pagina .box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #fff; /* Color distintivo para los títulos */
 }
 
-.pie-pagina .grupo-1 .box a {
-  margin-bottom: 25px;
-  font-size: 20px;
+.pie-pagina .box ul,
+.pie-pagina .box li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pie-pagina .box li a {
   color: white;
   text-decoration: none;
-  list-style: none;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.pie-pagina .box li a:hover {
+  color: #ffcc00; /* Cambio de color al hacer hover */
+}
+
+.pie-pagina .red-social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
 .pie-pagina .red-social a:hover {
-  color: #f39c12; /* Color al pasar el mouse */
+  color: #ffcc00; /* Cambia de color cuando el cursor pasa por los íconos */
 }
 
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
+.pie-pagina .grupo-2 {
   text-align: center;
-  transition: all 300ms ease;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 40px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+.pie-pagina .grupo-2 small {
+  color: #aaa;
 }
 
-.pie-apgina .grupo-2 {
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
+.pie-pagina .grupo-2 small b {
   color: #fff;
 }
 
-.pie-apgina .grupo-2 small {
-  font-size: 15px;
+.pie-pagina .box figure img {
+  max-width: 150px;
+  margin-bottom: 15px;
+  transition: filter 0.3s ease;
 }
 
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
-    width: 80%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
+.pie-pagina .box figure img:hover {
+  filter: brightness(1) invert(0); /* Invertir colores al pasar el cursor */
 }/*# sourceMappingURL=pie-pagina.css.map */
