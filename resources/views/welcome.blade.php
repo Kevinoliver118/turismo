@@ -25,9 +25,9 @@
     @include('components.packages.intro-section')
   </div>
   <div>
-    @include('components.packages.amazon-adventures')
-    @include('components.packages.cusco-explorations')
-    @include('components.packages.destination-highlight')
+    @include('components.packages-home.amazon-adventures')
+    @include('components.packages-home.cusco-explorations')
+    @include('components.packages-home.destination-highlight')
     @include('components.componentes.pie-pagina')
   </div>
 </div>

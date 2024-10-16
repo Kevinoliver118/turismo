@@ -2,11 +2,12 @@
     <div class="logo">
         <a href="{{route('welcome')}}">Amazonia</a>
     </div>
-        <!-- Icono de menú hamburguesa para pantallas móviles -->
-    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
-    <!-- Icono de cerrar menú (X) -->
-    <button class="close-btn" onclick="toggleMenu()">&#10005;</button>
+    <label class="burger" for="burger">
+        <input type="checkbox" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
     <ul class="nav-links">
         <li class="nav-item">
@@ -39,12 +40,33 @@
     </ul>
     <div class="contact-info">
         <button class="contact-btn">Contact Us</button>
-        <div class="currency-switcher">
-            <select>
-                <option value="usd">$ USD</option>
-                <option value="eur">€ EUR</option>
-                <option value="gbp">£ GBP</option>
+        <div class="dropdown-input">
+            <label for="currency-select" class="dropdown-label">Seleccionar moneda:</label>
+            <select id="currency-select" name="currency">
+                <option value="usd" selected>Dólar</option>
+                <option value="eur">Euro</option>
+                <option value="pen">Soles</option>
             </select>
         </div>
     </div>
 </nav>
+<script>
+    document.getElementById('currency-select').addEventListener('change', function() {
+  const selectedCurrency = this.value;
+  console.log("Moneda seleccionada:", selectedCurrency);
+
+  // Lógica adicional que quieras implementar con la moneda seleccionada
+  switch (selectedCurrency) {
+    case 'usd':
+      console.log("Has seleccionado el Dólar");
+      break;
+    case 'eur':
+      console.log("Has seleccionado el Euro");
+      break;
+    case 'pen':
+      console.log("Has seleccionado Soles");
+      break;
+  }
+});
+
+</script>
